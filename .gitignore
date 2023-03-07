@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+target/
+>>>>>>> d022317 (Initial commit)
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
