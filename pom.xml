@@ -4,20 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-<<<<<<< HEAD
     <groupId>ru.yandex.praktikum</groupId>
     <artifactId>sprint_7</artifactId>
-=======
-    <groupId>org.example</groupId>
-    <artifactId>Sprint_7</artifactId>
->>>>>>> d022317 (Initial commit)
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<<<<<<< HEAD
         <!-- версия Aspectj -->
         <aspectj.version>1.9.7</aspectj.version>
         <!-- версия Allure -->
@@ -100,8 +94,4 @@
             </plugin>
         </plugins>
     </build>
-=======
-    </properties>
-
->>>>>>> d022317 (Initial commit)
 </project>
