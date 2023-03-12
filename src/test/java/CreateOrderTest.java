@@ -27,16 +27,16 @@ public class CreateOrderTest{
     @Parameterized.Parameters
     public static Object[][] getData() {
         return new Object[][] {
-                {new Order("Naruto", "Uchiha", "Konoha, 142 apt.", "4",
-                        "+7 800 355 35 35", "5", "2020-06-06",
-                        "Saske, come back to Konoha", List.of())},
-                {new Order("Naruto", "Uchiha", "Konoha, 142 apt.", "4",
-                        "+7 800 355 35 35", "5", "2020-06-06",
-                        "Saske, come back to Konoha", List.of("BLACK"))},
-                {new Order("Naruto", "Uchiha", "Konoha, 142 apt.", "4",
-                        "+7 800 355 35 35",
-                        "5", "2020-06-06",
-                        "Saske, come back to Konoha", List.of("BLACK", "GREY"))},
+                {new Order("Alex", "Alex", "Kuku, kuka", "Butovo",
+                        "+7 800 555 35 35", "6", "2023-02-02",
+                        "Nice day", List.of())},
+                {new Order("Kok", "Kok", "Moscow, area", "Any",
+                        "+7 800 355 35 36", "6", "2023-01-01",
+                        "You nice", List.of("BLACK"))},
+                {new Order("Nikita", "Yana", "Petr,84", "Green",
+                        "+7 800 355 35 37",
+                        "6", "2023-01-01",
+                        "Nice of to see your", List.of("BLACK", "GREY"))},
         };
     }
 
