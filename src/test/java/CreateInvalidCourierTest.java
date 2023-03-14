@@ -1,5 +1,6 @@
 import base.CourierApi;
 import io.qameta.allure.junit4.DisplayName;
+import org.junit.After;
 import pojo.Courier;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,6 +15,7 @@ public class CreateInvalidCourierTest {
 
     private CourierApi courierApi;
     private Courier courier;
+    private Integer courierId;
 
     public CreateInvalidCourierTest(Courier courier) {
         this.courier = courier;
@@ -40,5 +42,15 @@ public class CreateInvalidCourierTest {
                 .statusCode(SC_BAD_REQUEST)
                 .and()
                 .body("message", equalTo("Недостаточно данных для создания учетной записи"));
+    }
+    @After
+    public void clear(){
+        try{
+            courierId = courierApi.login(courier)
+                    .extract().path("id");
+            courierApi.delete(courierId);
+        }catch (Exception exception){
+            System.out.println("Тест завершился без удаления курьера т.к. id не найден");
+        }
     }
 }
